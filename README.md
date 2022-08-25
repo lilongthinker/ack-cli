@@ -8,25 +8,37 @@
 
 ## command design
 
+### cd (subcommand)
+```bash
+ack-cli cd cluster ${cluster-id}
+```
+> context switch to cluster
 
-* ack-cli cd cluster ${cluster-id}
-context switch to cluster
+```bash
+ack-cli cd node ${node-name} -c ${cluster-id}
+```
 
-* ack-cli cd node ${node-name} -c ${cluster-id}
 context switch cluster and node
 
-* ack-cli list node -c ${cluster-id}
+### list 
+>ack-cli ls node -c ${cluster-id}
+
 list node in context cluster
 
-* ack-cli list pod -node ${node-name}
+>ack-cli ls pod -node ${node-name}
+
 list pod in context node
 
-* ack-cli inspect node ${node-name}
+
+### inspect
+>ack-cli inspect node ${node-name}
+
 show detail of node
 
-* ack-cli inspect pod ${pod-name}
-show detail of pod
+>ack-cli inspect pod ${pod-name}
 
+show detail of pod
+### summary
 ack-cli summary cluster ${cluster-id}
 
 defaul log
@@ -36,5 +48,3 @@ csi: {type: csi/flexvolume, version: 222}
 node pools list
 
 pool-name, pool-type, status, size
-
-
