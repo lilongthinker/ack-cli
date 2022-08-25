@@ -1,0 +1,37 @@
+{
+	"name": "ack-cli",
+	"description": "ack cli personl tools for useful command and prettry result show",
+	"version": "0.0.1",
+	"license": "mit",
+	"bin": {
+		"ack-cli": "index.js"
+	},
+	"author": {
+		"name": "lilong",
+		"email": "lilongthinker@163.com",
+		"url": "..."
+	},
+	"keywords": [
+		"ack-cli",
+		"lilong"
+	],
+	"files": [
+		"index.js",
+		"utils"
+	],
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"cli-alerts": "^1.2.2",
+		"cli-handle-error": "^4.4.0",
+		"cli-handle-unhandled": "^1.1.1",
+		"cli-meow-help": "^3.1.0",
+		"cli-welcome": "^2.2.2",
+		"meow": "^9.0.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.7.1"
+	}
+}
