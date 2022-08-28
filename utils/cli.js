@@ -24,6 +24,7 @@ const flags = {
 		alias: `v`,
 		desc: `Print CLI version`
 	}
+
 };
 
 const commands = {
@@ -40,6 +41,7 @@ const options = {
 	inferType: true,
 	description: false,
 	hardRejection: false,
+	// input,
 	flags
 };
 
