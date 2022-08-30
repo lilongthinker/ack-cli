@@ -20,6 +20,8 @@ ack-cli cd cluster ${cluster-id}
 ```
 > context switch to cluster
 
+aliyun cs list all
+
 ```bash
 ack-cli cd node ${node-name} -c ${cluster-id}
 ```
